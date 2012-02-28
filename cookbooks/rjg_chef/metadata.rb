@@ -8,3 +8,9 @@ version          "0.0.1"
 depends "rs_utils"
 
 recipe "rjg_chef::default","Prints a message to the output"
+
+attribute "rjg_chef/custom_input",
+  :display_name => "A Custom Chef Input",
+  :choice => ["A", "B", "C"],
+  :recipes => ["rjg_chef::default"],
+  :required => "required"

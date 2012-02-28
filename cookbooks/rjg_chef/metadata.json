@@ -5,6 +5,20 @@
   "name": "rjg_chef",
   "maintainer_email": "ryan.geyer@rightscale.com",
   "attributes": {
+    "rjg_chef/custom_input": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+        "A",
+        "B",
+        "C"
+      ],
+      "type": "string",
+      "recipes": [
+        "rjg_chef::default"
+      ],
+      "display_name": "A Custom Chef Input"
+    }
   },
   "license": "All rights reserved",
   "suggestions": {
